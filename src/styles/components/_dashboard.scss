@@ -1,20 +1,14 @@
 .dashboard {
   display: block;
-  margin: 100px 0 30px;
-  padding: 50px;
+  position: fixed;
+  top: 100px;
+  bottom: 30px;
+  left: 0;
+  right: 0;
   border-radius: 45px;
   border-top: none;
   border-bottom: none;
-  border-left: solid $frame-border-color 25px;
-  border-right: solid $frame-border-color 25px;
+  border-left: solid $frame-border-color 15px;
+  border-right: solid $frame-border-color 15px;
   background-color: ghostwhite;
-  min-height: 80vh;
-}
-
-.item{
-  padding: 50px;
-}
-
-.item{
-  padding: 50px;
 }
