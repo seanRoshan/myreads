@@ -9,7 +9,7 @@ function App() {
     const title = "MyReads";
 
     return (
-        <Container className="app" fixed>
+        <Container className="app" style={{paddingLeft: 0, paddingRight: 0}}>
             <HeaderComponent title={title}/>
             <DashboardComponent/>
             <FooterComponent/>
