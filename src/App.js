@@ -1,16 +1,15 @@
 import React from 'react';
-import './App.css';
+import './styles/App.scss';
 import Container from "@material-ui/core/Container";
-import FooterComponent from "./components/footer/footer.component";
-import DashboardComponent from "./components/dashboard/dashboard.component";
-import HeaderComponent from "./components/header/header.component";
+import {HeaderComponent, DashboardComponent, FooterComponent} from "./components";
+
 
 function App() {
 
     const title = "MyReads";
 
     return (
-        <Container className="full-width" fixed>
+        <Container className="app" fixed>
             <HeaderComponent title={title}/>
             <DashboardComponent/>
             <FooterComponent/>

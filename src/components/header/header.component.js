@@ -1,8 +1,6 @@
 import React from 'react';
 
-import './header.component.scss';
-
-const HeaderComponent = (props) => {
+export const HeaderComponent = (props) => {
     const {title} = props;
     return (
         <header className="header">
@@ -10,5 +8,3 @@ const HeaderComponent = (props) => {
         </header>
     );
 };
-
-export default HeaderComponent;
