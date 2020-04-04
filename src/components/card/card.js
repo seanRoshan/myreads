@@ -8,6 +8,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Menu from "@material-ui/core/Menu";
 import Fade from "@material-ui/core/Fade";
 import MenuItem from "@material-ui/core/MenuItem";
+import PropTypes from "prop-types";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -78,4 +79,11 @@ export const CardComponent = (props) => {
             />
         </Card>
     );
+};
+
+
+CardComponent.propTypes = {
+    book: PropTypes.object.isRequired,
+    moveBook: PropTypes.func.isRequired,
+    shelves: PropTypes.object.isRequired
 };

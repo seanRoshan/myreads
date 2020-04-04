@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {CardComponent} from "..";
 import Grid from "@material-ui/core/Grid";
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -57,4 +58,11 @@ export const ShelfComponent = (props) => {
             </ExpansionPanel>
         </div>
     );
-}
+};
+
+ShelfComponent.propTypes = {
+    title: PropTypes.string.isRequired,
+    books: PropTypes.array.isRequired,
+    moveBook: PropTypes.func.isRequired,
+    shelves: PropTypes.object.isRequired
+};
