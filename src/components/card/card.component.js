@@ -8,9 +8,8 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 import Menu from "@material-ui/core/Menu";
 import Fade from "@material-ui/core/Fade";
 import MenuItem from "@material-ui/core/MenuItem";
-import PropTypes from "prop-types";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
     root: {
         maxWidth: 400,
         maxHeight: 600
@@ -25,8 +24,7 @@ export const CardComponent = (props) => {
 
     const {book, moveBook, shelves} = props;
     const {title, authors} = book;
-    const imageLink = book && book.imageLinks && book.imageLinks.thumbnail ?
-        book.imageLinks.thumbnail : "https://www.southtabor.com/newsite/wp-content/themes/consultix/images/no-image-found-360x250.png";
+    const imageLink = book.imageLinks.thumbnail;
     const subTitle = "By " + (authors && authors.length ? authors.join(", ") : "unknown author");
 
     const options = Object.keys(shelves).filter((key) => (key !== book.shelf)).map((key) => ({
@@ -38,20 +36,16 @@ export const CardComponent = (props) => {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
-
-    const handleMove = (option) => {
+    const handleClose = (option) => {
         moveBook(option);
-        handleClose();
+        setAnchorEl(null);
     };
 
     return (
         <Card className={classes.root}>
             <CardHeader
                 action={
-                    <IconButton aria-label="actions" onClick={handleClick}
+                    <IconButton aria-label="options" onClick={handleClick}
                                 disabled={!options.length}><MoreVertIcon/></IconButton>
                 }
                 title={title}
@@ -71,7 +65,7 @@ export const CardComponent = (props) => {
                     Move to
                 </MenuItem>
                 {options.map((option) => (
-                    <MenuItem key={option.key} onClick={() => handleMove(option.key)}>
+                    <MenuItem key={option.key} onClick={() => handleClose(option.key)}>
                         {option.title}
                     </MenuItem>
                 ))}
@@ -84,11 +78,4 @@ export const CardComponent = (props) => {
             />
         </Card>
     );
-};
-
-
-CardComponent.propTypes = {
-    book: PropTypes.object.isRequired,
-    moveBook: PropTypes.func.isRequired,
-    shelves: PropTypes.object.isRequired
 };

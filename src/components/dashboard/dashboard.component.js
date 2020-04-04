@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import {ShelfComponent} from "..";
 import {BooksService} from "../../services";
-import {HomeComponent, SearchComponent} from "../../views";
-import {Route} from "react-router-dom";
+
 
 export class DashboardComponent extends Component {
 
@@ -44,9 +44,9 @@ export class DashboardComponent extends Component {
         this.bookService.getAll().then((books) => {
 
             if (books && books.length > 0) {
-                Object.keys(bookShelves).map((key) => (
+                Object.keys(bookShelves).map((key) => {
                         bookShelves[key].books = books.filter((book) => (book.shelf === key))
-                    )
+                    }
                 );
             }
 
@@ -64,21 +64,18 @@ export class DashboardComponent extends Component {
     }
 
     render() {
-
+        const {bookShelves} = this.state;
         return (
             <main className="dashboard">
-                <Route exact path='/search' render={() => {
-                    return (<SearchComponent/>)
-                }}>
-                </Route>
-                <Route exact path='/' render={() => {
-                    const {bookShelves} = this.state;
-                    return (<HomeComponent
-                        bookShelves={bookShelves}
-                        moveBook={this.moveBook.bind(this)}
+                {Object.keys(bookShelves).filter((key) => (!bookShelves[key].hidden)).map((key) => {
+                    const {title, books} = bookShelves[key];
+                    return (<ShelfComponent key={key}
+                                            title={title}
+                                            books={books}
+                                            shelves={bookShelves}
+                                            moveBook={this.moveBook.bind(this)}
                     />)
-                }}>
-                </Route>
+                })}
             </main>
         );
     }
