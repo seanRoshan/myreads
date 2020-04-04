@@ -35,11 +35,6 @@ export class DashboardComponent extends Component {
     }
 
     componentDidMount() {
-        this.loadBooks();
-    }
-
-
-    loadBooks() {
         const {bookShelves} = this.state;
         this.bookService.getAll().then((books) => {
 
@@ -58,9 +53,8 @@ export class DashboardComponent extends Component {
         });
     }
 
-    moveBook(book, destination) {
+    moveBook(destination, book) {
         console.log(`Move ${book.title} from ${book.shelf} to ${destination}!`);
-        this.bookService.update(book, destination).then(() => (this.loadBooks()));
     }
 
     render() {
@@ -73,7 +67,7 @@ export class DashboardComponent extends Component {
                                             title={title}
                                             books={books}
                                             shelves={bookShelves}
-                                            moveBook={this.moveBook.bind(this)}
+                                            moveBook={this.moveBook}
                     />)
                 })}
             </main>
