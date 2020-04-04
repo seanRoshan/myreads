@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="951a1a5c-2fe5-4a8f-ba1b-a509975f68e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/dashboard.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shelf/shelf.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shelf/shelf.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/books.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/books.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/views/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/views/_search.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home/home.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home/home.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/search/search.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/search/search.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <workItem from="1585595303110" duration="644000" />
       <workItem from="1585866190776" duration="2299000" />
       <workItem from="1585868509428" duration="44030000" />
-      <workItem from="1585980709925" duration="21557000" />
+      <workItem from="1585980709925" duration="23089000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Footer component added&#10;&#10;This component shows copyright text">
       <created>1585870565020</created>
@@ -144,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585989720914</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: The application can search books and show results">
+      <created>1586002771685</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586002771685</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,17 +163,18 @@
     <MESSAGE value="feat: the application is now capable of showing shelves" />
     <MESSAGE value="feat: The application is now capable of moving books from one shelf to another" />
     <MESSAGE value="feat: The application can navigate between Search page and Home Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: The application can navigate between Search page and Home Page" />
+    <MESSAGE value="feat: The application can search books and show results" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: The application can search books and show results" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585874652692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585874652692" />
-    <state x="903" y="208" key="CommitChangelistDialog2" timestamp="1585989720231">
+    <state x="903" y="208" key="CommitChangelistDialog2" timestamp="1586002771074">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="903" y="208" key="CommitChangelistDialog2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585989720231" />
+    <state x="903" y="208" key="CommitChangelistDialog2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1586002771074" />
     <state x="1061" y="442" width="875" height="790" key="FileChooserDialogImpl" timestamp="1585895823496">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -242,10 +247,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="343" key="SettingsEditor/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585868753117" />
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1585989722583">
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1586002773415">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585989722583" />
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1586002773415" />
     <state x="937" y="331" key="run.anything.popup" timestamp="1585873716874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
