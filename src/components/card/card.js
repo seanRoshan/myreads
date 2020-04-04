@@ -22,16 +22,12 @@ export const CardComponent = (props) => {
     const open = Boolean(anchorEl);
     const classes = useStyles();
 
-    const {title, authors, imageLink, moveBook} = props;
-
+    const {book, moveBook, shelves} = props;
+    const {title, authors} = book;
+    const imageLink = book.imageLinks.thumbnail;
     const subTitle = "By " + (authors && authors.length ? authors.join(", ") : "unknown author");
 
-    const options = [
-        'Currently Reading',
-        'Read',
-        'Want to Read',
-        'None'
-    ];
+    const options = Object.keys(shelves).filter((key) => (key !== book.shelf)).map((key) => (shelves[key].title));
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -46,9 +42,7 @@ export const CardComponent = (props) => {
         <Card className={classes.root}>
             <CardHeader
                 action={
-                    <IconButton aria-label="options" onClick={handleClick}>
-                        <MoreVertIcon/>
-                    </IconButton>
+                    <IconButton aria-label="options" onClick={handleClick} disabled={!options.length}><MoreVertIcon/></IconButton>
                 }
                 title={title}
                 titleTypographyProps={{variant: 'h6'}}

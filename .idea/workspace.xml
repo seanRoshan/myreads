@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="951a1a5c-2fe5-4a8f-ba1b-a509975f68e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/card/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/books.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/components/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shelf/shelf.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/components/_shelf.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/card/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/dashboard.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/dashboard.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_dashboard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_header.scss" afterDir="false" />
     </list>
@@ -88,7 +84,7 @@
       <workItem from="1585594461125" duration="600000" />
       <workItem from="1585595303110" duration="644000" />
       <workItem from="1585866190776" duration="2299000" />
-      <workItem from="1585868509428" duration="26851000" />
+      <workItem from="1585868509428" duration="39151000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Footer component added&#10;&#10;This component shows copyright text">
       <created>1585870565020</created>
@@ -118,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585876021287</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: the applications is now capable of showing books&#10;&#10;+ added book service&#10;+ added card component&#10;* fixed style issue">
+      <created>1585940984399</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585940984399</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,17 +132,18 @@
     <MESSAGE value="feat: Dashboard component added&#10;&#10;This component shows the main content on the page" />
     <MESSAGE value="feat: Header component added&#10;&#10;This component shows the header of the page" />
     <MESSAGE value="refactor: Stylesheets and Components are organized" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Stylesheets and Components are organized" />
+    <MESSAGE value="feat: the applications is now capable of showing books&#10;&#10;+ added book service&#10;+ added card component&#10;* fixed style issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: the applications is now capable of showing books&#10;&#10;+ added book service&#10;+ added card component&#10;* fixed style issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585874652692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585874652692" />
-    <state x="903" y="208" key="CommitChangelistDialog2" timestamp="1585876020627">
+    <state x="903" y="208" key="CommitChangelistDialog2" timestamp="1585940983629">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="903" y="208" key="CommitChangelistDialog2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585876020627" />
+    <state x="903" y="208" key="CommitChangelistDialog2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585940983629" />
     <state x="1061" y="442" width="875" height="790" key="FileChooserDialogImpl" timestamp="1585895823496">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -212,10 +216,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="343" key="SettingsEditor/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585868753117" />
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1585876023602">
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1585940986486">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585876023602" />
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1585940986486" />
     <state x="937" y="331" key="run.anything.popup" timestamp="1585873716874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
