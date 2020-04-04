@@ -10,7 +10,7 @@ import Fade from "@material-ui/core/Fade";
 import MenuItem from "@material-ui/core/MenuItem";
 import PropTypes from "prop-types";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
     root: {
         maxWidth: 400,
         maxHeight: 600
@@ -25,7 +25,8 @@ export const CardComponent = (props) => {
 
     const {book, moveBook, shelves} = props;
     const {title, authors} = book;
-    const imageLink = book.imageLinks.thumbnail;
+    const imageLink = book && book.imageLinks && book.imageLinks.thumbnail ?
+        book.imageLinks.thumbnail : "https://www.southtabor.com/newsite/wp-content/themes/consultix/images/no-image-found-360x250.png";
     const subTitle = "By " + (authors && authors.length ? authors.join(", ") : "unknown author");
 
     const options = Object.keys(shelves).filter((key) => (key !== book.shelf)).map((key) => ({
@@ -37,16 +38,20 @@ export const CardComponent = (props) => {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = (option) => {
-        moveBook(option);
+    const handleClose = () => {
         setAnchorEl(null);
+    };
+
+    const handleMove = (option) => {
+        moveBook(option);
+        handleClose();
     };
 
     return (
         <Card className={classes.root}>
             <CardHeader
                 action={
-                    <IconButton aria-label="options" onClick={handleClick}
+                    <IconButton aria-label="actions" onClick={handleClick}
                                 disabled={!options.length}><MoreVertIcon/></IconButton>
                 }
                 title={title}
@@ -66,7 +71,7 @@ export const CardComponent = (props) => {
                     Move to
                 </MenuItem>
                 {options.map((option) => (
-                    <MenuItem key={option.key} onClick={() => handleClose(option.key)}>
+                    <MenuItem key={option.key} onClick={() => handleMove(option.key)}>
                         {option.title}
                     </MenuItem>
                 ))}

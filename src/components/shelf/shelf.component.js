@@ -19,11 +19,6 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: "20px",
         minHeight: "600px"
     },
-
-    heading: {
-        fontSize: theme.typography.pxToRem(15),
-        fontWeight: theme.typography.fontWeightRegular,
-    },
 }));
 
 export const ShelfComponent = (props) => {
@@ -36,12 +31,13 @@ export const ShelfComponent = (props) => {
         <div className={classes.root}>
             <ExpansionPanel defaultExpanded>
                 <ExpansionPanelSummary
-                    expandIcon={<ExpandMoreIcon/>}
+                    expandIcon={title ?<ExpandMoreIcon/> : ""}
                     aria-controls={title}
                     id={title + "-shelf"}
                 >
                     <Typography variant={'h4'}>{title}</Typography>
                 </ExpansionPanelSummary>
+                <Typography variant={"h6"} style={{textAlign: "center"}} hidden={books && books.length} elevation={3}>NO CONTENT</Typography>
                 <ExpansionPanelDetails className={classes.expanded}>
                     <Grid className="item" container spacing={4}>
                         {books.map((book) => (
