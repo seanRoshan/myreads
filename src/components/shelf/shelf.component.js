@@ -46,9 +46,9 @@ export const ShelfComponent = (props) => {
                         {books.map((book) => (
                             <Grid key={book.id} item xs={12} sm={6} md={4} lg={3} xl={4}>
                                 <CardComponent
-                                    shelves = {shelves}
-                                    book = {book}
-                                    moveBook={(destination) => moveBook(destination, book)}
+                                    shelves={shelves}
+                                    book={book}
+                                    moveBook={(destination) => moveBook(book, destination)}
                                 />
                             </Grid>
                         ))}

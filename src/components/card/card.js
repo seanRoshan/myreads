@@ -27,7 +27,10 @@ export const CardComponent = (props) => {
     const imageLink = book.imageLinks.thumbnail;
     const subTitle = "By " + (authors && authors.length ? authors.join(", ") : "unknown author");
 
-    const options = Object.keys(shelves).filter((key) => (key !== book.shelf)).map((key) => (shelves[key].title));
+    const options = Object.keys(shelves).filter((key) => (key !== book.shelf)).map((key) => ({
+        key,
+        title: shelves[key].title
+    }));
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -42,7 +45,8 @@ export const CardComponent = (props) => {
         <Card className={classes.root}>
             <CardHeader
                 action={
-                    <IconButton aria-label="options" onClick={handleClick} disabled={!options.length}><MoreVertIcon/></IconButton>
+                    <IconButton aria-label="options" onClick={handleClick}
+                                disabled={!options.length}><MoreVertIcon/></IconButton>
                 }
                 title={title}
                 titleTypographyProps={{variant: 'h6'}}
@@ -61,8 +65,8 @@ export const CardComponent = (props) => {
                     Move to
                 </MenuItem>
                 {options.map((option) => (
-                    <MenuItem key={option} onClick={() => handleClose(option)}>
-                        {option}
+                    <MenuItem key={option.key} onClick={() => handleClose(option.key)}>
+                        {option.title}
                     </MenuItem>
                 ))}
             </Menu>
