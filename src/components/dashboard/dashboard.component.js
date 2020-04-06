@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {BooksService} from "../../services";
 import {HomeComponent, SearchComponent} from "../../views";
-import {Route} from "react-router-dom";
+import {HashRouter, Route} from "react-router-dom";
 
 export class DashboardComponent extends Component {
 
@@ -105,24 +105,26 @@ export class DashboardComponent extends Component {
     render() {
         return (
             <main className="dashboard">
-                <Route exact path='/search' render={() => {
-                    const {searchBooks, bookShelves} = this.state;
-                    return (<SearchComponent
-                        books={searchBooks}
-                        bookShelves={bookShelves}
-                        search={this.searchBook.bind(this)}
-                        moveBook={this.moveBook.bind(this)}
-                    />)
-                }}>
-                </Route>
-                <Route exact path='/' render={() => {
-                    const {bookShelves} = this.state;
-                    return (<HomeComponent
-                        bookShelves={bookShelves}
-                        moveBook={this.moveBook.bind(this)}
-                    />)
-                }}>
-                </Route>
+                <HashRouter basename='/'>
+                    <Route exact path='/search' render={() => {
+                        const {searchBooks, bookShelves} = this.state;
+                        return (<SearchComponent
+                            books={searchBooks}
+                            bookShelves={bookShelves}
+                            search={this.searchBook.bind(this)}
+                            moveBook={this.moveBook.bind(this)}
+                        />)
+                    }}>
+                    </Route>
+                    <Route exact path='/' render={() => {
+                        const {bookShelves} = this.state;
+                        return (<HomeComponent
+                            bookShelves={bookShelves}
+                            moveBook={this.moveBook.bind(this)}
+                        />)
+                    }}>
+                    </Route>
+                </HashRouter>
             </main>
         );
     }
