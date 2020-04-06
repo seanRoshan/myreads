@@ -9,9 +9,8 @@ export const HomeComponent = (props) => {
     return Object.keys(bookShelves).filter((key) => (!bookShelves[key].hidden)).map((key) => {
         const {title, books} = bookShelves[key];
         return (
-            <React.Fragment>
-                <ShelfComponent key={key}
-                                title={title}
+            <React.Fragment key={key}>
+                <ShelfComponent title={title}
                                 books={books}
                                 shelves={bookShelves}
                                 moveBook={(book, destination) => moveBook(book, destination)}

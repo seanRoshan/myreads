@@ -1,3 +1,8 @@
-body{
+body {
   background-color: $frame-border-color;
+}
+
+.app {
+  margin: 0;
+  min-width: 100%;
 }

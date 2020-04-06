@@ -1,8 +1,8 @@
-.searchView{
-  padding: 50px 0;
+.searchView {
+  padding: 100px 0;
 }
 
-.searchbar{
+.searchbar {
   position: absolute;
   top: 100px;
   left: 25px;
@@ -20,8 +20,8 @@
   outline: none;
 }
 
-.backButton{
-  position: fixed;
+.backButton {
+  position: absolute;
   top: 113px;
   left: 40px;
   z-index: 9999;
@@ -32,15 +32,15 @@
   color: $frame-border-color;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: gray;
   }
 }
 
 
-.searchButton{
+.searchButton {
   position: fixed;
-  bottom: 50px;
+  bottom: 60px;
   right: 50px;
   z-index: 9999;
   background-color: transparent;
@@ -50,7 +50,7 @@
   color: $frame-border-color;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     color: gray;
   }
 }

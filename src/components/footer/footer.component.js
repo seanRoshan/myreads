@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from "@material-ui/core/Link";
 
-import './footer.component.scss';
-
-const FooterComponent = () => {
+export const FooterComponent = () => {
     return (
         <div>
             <footer className="main-footer">
@@ -15,5 +13,3 @@ const FooterComponent = () => {
         </div>
     );
 };
-
-export default FooterComponent;
