@@ -1,20 +1,26 @@
 import React from 'react';
-import './styles/App.scss';
-import Container from "@material-ui/core/Container";
-import {HeaderComponent, DashboardComponent, FooterComponent} from "./components";
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-
-    const title = "MyReads";
-
-    return (
-        <Container className="app" style={{paddingLeft: 0, paddingRight: 0}}>
-            <HeaderComponent title={title}/>
-            <DashboardComponent/>
-            <FooterComponent/>
-        </Container>
-    );
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;

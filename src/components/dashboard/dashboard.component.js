@@ -3,8 +3,11 @@ import {BooksService} from "../../services";
 import {HomeComponent, SearchComponent} from "../../views";
 import {HashRouter, Route} from "react-router-dom";
 
-export class DashboardComponent extends Component {
-
+const DashboardComponent = () => {
+    return (
+        <main className="dashboard"/>
+    );
+};
 
     constructor(props) {
         super(props);
