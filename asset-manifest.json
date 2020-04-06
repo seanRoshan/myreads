@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/myreads/static/css/main.e1107c17.chunk.css",
-    "main.js": "/myreads/static/js/main.0cbc865f.chunk.js",
-    "main.js.map": "/myreads/static/js/main.0cbc865f.chunk.js.map",
+    "main.js": "/myreads/static/js/main.9f8ea665.chunk.js",
+    "main.js.map": "/myreads/static/js/main.9f8ea665.chunk.js.map",
     "runtime-main.js": "/myreads/static/js/runtime-main.b804edbd.js",
     "runtime-main.js.map": "/myreads/static/js/runtime-main.b804edbd.js.map",
-    "static/js/2.ba775e47.chunk.js": "/myreads/static/js/2.ba775e47.chunk.js",
-    "static/js/2.ba775e47.chunk.js.map": "/myreads/static/js/2.ba775e47.chunk.js.map",
+    "static/js/2.592c7714.chunk.js": "/myreads/static/js/2.592c7714.chunk.js",
+    "static/js/2.592c7714.chunk.js.map": "/myreads/static/js/2.592c7714.chunk.js.map",
     "index.html": "/myreads/index.html",
-    "precache-manifest.112ad6a31c5108a41662f7e111e31f65.js": "/myreads/precache-manifest.112ad6a31c5108a41662f7e111e31f65.js",
+    "precache-manifest.ae12cc65841593213cafaa300c6e2896.js": "/myreads/precache-manifest.ae12cc65841593213cafaa300c6e2896.js",
     "service-worker.js": "/myreads/service-worker.js",
     "static/css/main.e1107c17.chunk.css.map": "/myreads/static/css/main.e1107c17.chunk.css.map",
-    "static/js/2.ba775e47.chunk.js.LICENSE.txt": "/myreads/static/js/2.ba775e47.chunk.js.LICENSE.txt"
+    "static/js/2.592c7714.chunk.js.LICENSE.txt": "/myreads/static/js/2.592c7714.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b804edbd.js",
-    "static/js/2.ba775e47.chunk.js",
+    "static/js/2.592c7714.chunk.js",
     "static/css/main.e1107c17.chunk.css",
-    "static/js/main.0cbc865f.chunk.js"
+    "static/js/main.9f8ea665.chunk.js"
   ]
 }
