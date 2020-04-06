@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbbff772-1c56-41f1-9f87-3d3193813f72" name="Default Changelist" comment="" />
+    <list default="true" id="fbbff772-1c56-41f1-9f87-3d3193813f72" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZmX9fNqXmcNtAYl83Krn2N1xbZ" />
   <component name="ProjectViewState">
@@ -33,6 +40,32 @@
       <option name="presentableId" value="Default" />
       <updated>1585445092453</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix: rebase to fix author name">
+      <created>1586196668666</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586196668666</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: rebase to fix author name" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: rebase to fix author name" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="903" y="208" key="CommitChangelistDialog2" timestamp="1586196668234">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="903" y="208" key="CommitChangelistDialog2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1586196668234" />
+    <state x="985" y="408" key="MultipleFileMergeDialog" timestamp="1586196680768">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="985" y="408" key="MultipleFileMergeDialog/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1586196680768" />
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2" timestamp="1586196670263">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="873" y="430" key="Vcs.Push.Dialog.v2/0.0.2560.1400/3840.0.2560.1400/-3840.0.2560.1400@0.0.2560.1400" timestamp="1586196670263" />
   </component>
 </project>
